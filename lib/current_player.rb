@@ -1,3 +1,4 @@
+# checks board to determine current turn number. 0-9
 def turn_count(board)
   counter = 0
   board.each do |element|
@@ -6,4 +7,17 @@ def turn_count(board)
     end
   end
   return counter
+end
+
+# determines current turn
+def current_player(board)
+turn_num = turn_count(board) + 1
+  if turn_num.even
+    return "O"
+  else
+    return "X"
+  end
+
+  end
+
 end
