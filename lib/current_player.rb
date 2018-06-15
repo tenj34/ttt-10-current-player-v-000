@@ -19,5 +19,3 @@ turn_num = turn_count(board) + 1
   end
 
   end
-
-end
